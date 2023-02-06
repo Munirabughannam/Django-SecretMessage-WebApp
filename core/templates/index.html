@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <form action="" method="post">
+            {% csrf_token %}
+            <div style="margin-top: 10%;" class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Start Typing...</label>
+                <textarea name="secretMsg" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <button class="btn btn-success" type="submit">Get Secret Link</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
